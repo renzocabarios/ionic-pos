@@ -1,0 +1,7 @@
+{
+  "name": "ionic-pos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

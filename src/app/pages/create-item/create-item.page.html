@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Create Item </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form [formGroup]="form">
+        <ion-input
+          label="Name"
+          labelPlacement="floating"
+          placeholder="Enter Name Here"
+          formControlName="name"
+        ></ion-input>
+
+        <ion-input
+          label="Price"
+          labelPlacement="floating"
+          placeholder="Enter Price Here"
+          type="number"
+          formControlName="price"
+        ></ion-input>
+      </form>
+    </ion-card-content>
+    <ion-button (click)="submit()" expand="block">Block</ion-button>
+  </ion-card>
+</ion-content>

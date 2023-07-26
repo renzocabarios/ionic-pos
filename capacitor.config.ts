@@ -5,8 +5,13 @@ const config: CapacitorConfig = {
   appName: 'ionic-pos',
   webDir: 'www',
   server: {
-    androidScheme: 'https'
-  }
+    androidScheme: 'https',
+  },
+  plugins: {
+    CapacitorHttp: {
+      enabled: true,
+    },
+  },
 };
 
 export default config;
